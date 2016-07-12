@@ -42,8 +42,7 @@ tyrano.plugin.kag.menu.snapSave = function(title, call_back,flag_thumb) {
 				onrendered : function(canvas) {
 					
 					//◆変更 キャプチャ画像をjpeg＋圧縮。
-					if(save_conf.thumb_jpeg)var img_code = canvas.toDataURL("image/jpeg",thumb_saving.comp);
-					else var img_code = canvas.toDataURL();
+					img_code = canvas.toDataURL("image/jpeg",thumb_saving);
 					
 					var data = {};
 					data.title = title;
