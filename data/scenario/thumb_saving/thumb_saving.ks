@@ -20,7 +20,7 @@
 
 
 // ◆ サムネイル画像の圧縮率(0.0～1.0) 小さいほど画像が軽く粗くなります。
-tf.thumbcomp = 0.6;
+tf.thumb_saving = 0.6;
 
 [endscript]
 [loadjs storage="thumb_saving/thumb_saving.js"]
