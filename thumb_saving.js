@@ -53,13 +53,13 @@ tyrano.plugin.kag.menu.snapSave = function(title, call_back,flag_thumb) {
 					canvas.height = that.kag.config.scHeight;
 					var ctx = canvas.getContext("2d");
 					ctx.drawImage(img, 0, 0);
-					var img_code = canvas.toDataURL("image/"+thumb_saving.format,thumb_saving.quality); //◆画像圧縮
+					var img_code = canvas.toDataURL("image/"+thumb_saving.format,thumb_saving.qlty); //◆画像圧縮
 				}
 			} else
 				html2canvas($("#tyrano_base").get(0), {
 					onrendered: function (canvas) {
 						$("#tyrano_base").find(".layer_blend_mode").css("display", "");
-						var img_code = canvas.toDataURL("image/"+thumb_saving.format,thumb_saving.quality); //◆画像圧縮
+						var img_code = canvas.toDataURL("image/"+thumb_saving.format,thumb_saving.qlty); //◆画像圧縮
 						completeImage(img_code)
 					}
 				})

@@ -11,13 +11,13 @@ http://hororo.wp.xdomain.jp/68/
 ■使い方
 　①data/others/plugin に 「thumb_saving」を入れてください。
 　
-　②「thumb_saving」内の init.ks を開いてフォーマットと圧縮率を設定してください。
-　　※デフォルトは「"jepg"、0.7」
-　　※「webp」はGoogleChrome、Windows版のみ対応です。
-　　※圧縮率は、数値が小さいほど画像が軽く粗くなります。
+　②first.ks からプラグインを呼び出してください。
+　　[plugin name="thumb_saving" format="jpeg" qlty=0.7]
+　
+　　□パラメーターは省略できます。
+　　　　〇 format …　"jpeg" or "webp" （省略時 "jpeg"）
+　　　　〇 qlty　 …　0.1～1.0 　　　　（省略時 0.7）
 
-　③first.ks からプラグインを呼び出してください。
-　　[plugin name="thumb_saving"]
 
 ■動作確認
 　ティラノスクリプトv454a
